@@ -1,12 +1,14 @@
 const http = require('http');
 const TeamRepository = require('../src/repository/teamRepository')
+const TeamService = require('../src/service/teamService')
 
 const routes = {
   '/team:get': async (request, response) => {
-    // const teamRepository = new TeamRepository()
-    // const result = await teamRepository.team()
+    const teamService = new TeamService()
+    const result = await teamService.getTeamPokemon()
+    console.log(result)
 
-    response.write('Success')
+    response.write('Success your team is')
     return response.end()
   },
 
