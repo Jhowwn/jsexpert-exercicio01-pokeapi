@@ -5,15 +5,14 @@ const TeamService = require('../src/service/teamService')
 const routes = {
   '/team:get': async (request, response) => {
     const teamService = new TeamService()
-    const result = await teamService.getTeamPokemon()
-    console.log(result)
-
-    response.write('Success your team is')
+    const result = await teamService.getTeamPokemon(3)
+    
+    response.write(JSON.stringify(result))
     return response.end()
   },
 
   default: (request, response) => {
-    response.write('Calma lá mestre Pokemon você saiu de sua rota')
+    response.write(JSON.stringify({Success: true}))
     return response.end()
   }
 }
@@ -23,7 +22,7 @@ const handler = (request, response) => {
   const routeKey = `${url}:${method.toLowerCase()}`
   const chosen = routes[routeKey] || routes.default
   response.writeHead(200, {
-    'Content-Type': 'text/html'
+    'Content-Type': 'application/json'
   })
   return chosen(request, response)
 }

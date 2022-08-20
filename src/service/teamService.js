@@ -26,9 +26,10 @@ class TeamService {
     return pokemons
   }
 
-  async getTeamPokemon(team = 3) {
+  async getTeamPokemon(team) {
     const pokemons = await this.teamRepository.listPokemons()
     const fullteam = await this.getManyRandomPokemons(pokemons, team)
+    
     const teams = await Promise.all(
       fullteam.map(
         async pokemons => {

@@ -15,7 +15,6 @@ const mocks = {
 describe('TeamService Suite test', () => {
   let teamService = {}
   let sandBox = {}
-  const teamRepository = new TeamRepository()
   before(() => {
     teamService = new TeamService({TeamRepository})
   })
@@ -61,9 +60,15 @@ describe('TeamService Suite test', () => {
       )
       .onFirstCall()
       .returns(teamPokemnsMocked)
+      
+      sandBox.spy(
+        teamService,
+        teamService.getTeamPokemon.name
+      )
 
       const results = await teamService.getTeamPokemon()
-
+      
+      expect(teamService.getTeamPokemon.calledOnce).to.be.ok
       expect(results).to.be.deep.equal(expected)
     })
   })
