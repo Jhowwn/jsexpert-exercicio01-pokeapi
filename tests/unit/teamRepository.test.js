@@ -3,9 +3,9 @@ const { expect } = require('chai')
 const TeamRepository = require('../../src/repository/teamRepository')
 
 const mocks = {
-  valid_pokemon1: require('../mocks/valid-pokemon1.json'),
-  valid_pokemon2: require('../mocks/valid-pokemon2.json'),
-  valid_pokemon3: require('../mocks/valid-pokemon3.json'),
+  valid_pokemon1: require('../mocks/valid-moves-pokemon1.json'),
+  valid_pokemon2: require('../mocks/valid-moves-pokemon2.json'),
+  valid_pokemon3: require('../mocks/valid-moves-pokemon3.json'),
   valid_pokemons: require('../mocks/valid-pokemons.json'),
   valid_team: require('../mocks/valid-team.json'),
 }

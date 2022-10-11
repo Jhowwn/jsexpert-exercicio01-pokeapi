@@ -5,11 +5,13 @@ class TeamService {
     this.teamRepository = new TeamRepository()
   }
 
+  //Select a random number
   getRandomPokemonFromArray(pokemon) {
     const listLength = pokemon.length
     return Math.floor(Math.random() * (listLength))
   }
 
+  //Get a random number and return one Pokemon
   getRandomPokemon(pokemon) {
     const randomPokemon = this.getRandomPokemonFromArray(pokemon)
     const pokemonId = pokemon.results[randomPokemon]
@@ -17,6 +19,7 @@ class TeamService {
     return pokemonId
   }
 
+  //Get many random numbers and return many pokemons
   async getManyRandomPokemons(countPokemons, team) {
     const pokemons = []
     for (let i = 0; i < team; ++i) {
@@ -26,6 +29,7 @@ class TeamService {
     return pokemons
   }
 
+  //Make a random team pokemon and return a name and moves foreach pokemon 
   async getTeamPokemon(team) {
     const pokemons = await this.teamRepository.listPokemons()
     const fullteam = await this.getManyRandomPokemons(pokemons, team)

@@ -1,5 +1,4 @@
 const http = require('http');
-const TeamRepository = require('../src/repository/teamRepository')
 const TeamService = require('../src/service/teamService')
 
 const routes = {

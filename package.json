@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node src/api.js",
     "dev": "nodemon src/api.js",
-    "test": "npx mocha -w --parallel \"./{,!(node_modules)/**/}*.test.js\"",
-    "test:cov": "npx nyc npx mocha -w --parallel \"./{,!(node_modules)/**/}*.test.js"
+    "test": "npx mocha -w --timeout 20000 --parallel \"./{,!(node_modules)/**/}*.test.js\"",
+    "test:cov": "npx nyc npx mocha -w --timeout 20000 --parallel \"./{,!(node_modules)/**/}*.test.js"
   },
   "keywords": [],
   "author": "",
