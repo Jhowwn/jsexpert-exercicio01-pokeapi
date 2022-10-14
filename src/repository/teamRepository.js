@@ -4,8 +4,8 @@ const BASE_URL = 'https://pokeapi.co/api/v2'
 
 class TeamRepository {
   async makeRequest(url) {
+    const chunks = []
     return new Promise((resolve, reject) => {
-      const chunks = []
       https.get(url, response => {
         response.on('data', data => {
           chunks.push(data)
