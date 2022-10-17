@@ -18,16 +18,16 @@ Deve retornar um array com 3 pokemóns aleatórios, contendo seus respectivos `n
 
 ### Testes
 
-* [ ] mocks
-* [ ] stubs
-* [ ] spies
-* [ ] testes end-2-end
-* [ ] testes unitários
-* [ ] 100% de code coverage
+* [x] mocks
+* [x] stubs
+* [x] spies
+* [x] testes end-2-end
+* [x] testes unitários
+* [x] 100% de code coverage
 
 ### Extras
 
-* [ ] TDD e BDD, será que rola? Acho que vale a tentativa!
+* [x] TDD e BDD, será que rola? Acho que vale a tentativa!
 * [x] Que tal consumir a API sem usar libs externas? o módulo `https` do node pode ser bem interessante!
 
 ## Dicas
@@ -76,11 +76,11 @@ URLs Úteis ao desafio:
 ### Checklist features
 
 - Web API
-  * [ ] Deve ter uma rota raiz usada como _fallback_.
-  * [ ] Deve ter uma rota de `/team`, onde: 
-    * [ ] Deve consumir a PokeAPI e selecionar 3 pokemóns aleatórios
-    * [ ] Deve consumir a PokeAPI para obter mais informações sobre os pokemóns escolhidos
-    * [ ] Deve retornar um objeto JSON conetendo um array com 3 pokemóns, cada um com seus respectivos `name (String)` e `moves (String[])`
+  * [x] Deve ter uma rota raiz usada como _fallback_.
+  * [x] Deve ter uma rota de `/team`, onde: 
+    * [x] Deve consumir a PokeAPI e selecionar 3 pokemóns aleatórios
+    * [x] Deve consumir a PokeAPI para obter mais informações sobre os pokemóns escolhidos
+    * [x] Deve retornar um objeto JSON conetendo um array com 3 pokemóns, cada um com seus respectivos `name (String)` e `moves (String[])`
 
 - Testes
   * [ ] Deve ter cobertura de testes end-2-end e unitários
