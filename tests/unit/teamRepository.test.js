@@ -19,5 +19,18 @@ describe('TeamRepository Suite test', () => {
 
       expect(result).to.be.deep.equal(expected);
     })
+
+    it('Should return a specific pokemon', async () => {
+      const expected = mocks.valid_team[0];
+      const pokemon = 6;
+      const result = await teamRepository.foundPokemon(pokemon);
+
+      const pokemonChoose = {
+        name: result.name[0],
+        moves: result.moves
+      }
+
+      expect(pokemonChoose).to.be.deep.equal(expected);
+    })
   })
 })
