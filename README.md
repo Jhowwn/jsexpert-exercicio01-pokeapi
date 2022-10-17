@@ -22,12 +22,12 @@ Deve retornar um array com 3 pokemóns aleatórios, contendo seus respectivos `n
 * [x] stubs
 * [x] spies
 * [x] testes end-2-end
-* [ ] testes unitários
-* [ ] 100% de code coverage
+* [x] testes unitários
+* [x] 100% de code coverage
 
 ### Extras
 
-* [ ] TDD e BDD, será que rola? Acho que vale a tentativa!
+* [x] TDD e BDD, será que rola? Acho que vale a tentativa!
 * [x] Que tal consumir a API sem usar libs externas? o módulo `https` do node pode ser bem interessante!
 
 ## Dicas
