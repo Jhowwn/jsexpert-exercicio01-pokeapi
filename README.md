@@ -58,9 +58,12 @@ Deve retornar um array com 3 pokemóns aleatórios, contendo seus respectivos `n
 ## Coverage Report
 ![image](https://user-images.githubusercontent.com/80557451/197297560-a1c48390-3573-41d0-8bfe-7f98240d8a33.png)
 
-##Como usar
-Use para instalar as dependecias
+## Como usar
+```
+Use para instalar as dependências
 npm i
-use para rodas todos os testes
+Use para rodas todos os testes
 npm t
-use para testar todos os testes e gerar o reporte de cobertura
+Use para testar todos os testes e gerar um reporte de cobertura de testes
+npm run test:cov
+```
