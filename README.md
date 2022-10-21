@@ -54,9 +54,6 @@ Deve retornar um array com 3 pokemóns aleatórios, contendo seus respectivos `n
 
 4. Envie o link no canal `#desafios-jsexpert` da nossa comunidade no discord.
 
-## Até quando?
 
-Se você está pegando esse desafio na estréia, corre lá e envia pra gente até *Quarta-feira, 10 de novembro de 2021 (10/11/2021)*!
-
-
+## Coverage Report
 ![image](https://user-images.githubusercontent.com/80557451/197297560-a1c48390-3573-41d0-8bfe-7f98240d8a33.png)
