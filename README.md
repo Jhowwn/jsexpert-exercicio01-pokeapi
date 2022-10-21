@@ -30,48 +30,6 @@ Deve retornar um array com 3 pokemóns aleatórios, contendo seus respectivos `n
 * [x] TDD e BDD, será que rola? Acho que vale a tentativa!
 * [x] Que tal consumir a API sem usar libs externas? o módulo `https` do node pode ser bem interessante!
 
-## Dicas
-
-Sinta-se livre pra desenvolver sua solução da melhor maneira possível, e caso já queira uma ajuda nos patterns e em como organizar as idéias, aqui vai:
-
-### Arquitetura esperada
-
-```
-project
-│   README.md
-│   .nycrc.json    
-│   package.json
-│
-└───src
-│   │   api.js
-│   │
-│   └───repository
-│   │   │   teamRepository.js
-│   │  
-│   └───service
-│       │   teamService.js
-│   
-└───test
-│   └───e2e
-│   │   │   api.test.js
-│   │  
-│   └───mocks
-│   │   │   valid-team.json
-│   │   │   ...
-│   │  
-│   └───unit
-│       │   teamRepository.test.js
-│       │   teamService.test.js
-│         
-└───coverage
-│   │   ...
-```
-
-### Entendendo a PokeAPI
-
-URLs Úteis ao desafio:
-- https://pokeapi.co/api/v2/pokemon
-- https://pokeapi.co/api/v2/pokemon/7
 
 ### Checklist features
 
@@ -83,8 +41,8 @@ URLs Úteis ao desafio:
     * [x] Deve retornar um objeto JSON conetendo um array com 3 pokemóns, cada um com seus respectivos `name (String)` e `moves (String[])`
 
 - Testes
-  * [ ] Deve ter cobertura de testes end-2-end e unitários
-  * [ ] 100% de code coverage
+  * [x] Deve ter cobertura de testes end-2-end e unitários
+  * [x] 100% de code coverage
 
 ## Submissão
 
@@ -99,3 +57,6 @@ URLs Úteis ao desafio:
 ## Até quando?
 
 Se você está pegando esse desafio na estréia, corre lá e envia pra gente até *Quarta-feira, 10 de novembro de 2021 (10/11/2021)*!
+
+
+![image](https://user-images.githubusercontent.com/80557451/197297560-a1c48390-3573-41d0-8bfe-7f98240d8a33.png)
