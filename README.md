@@ -62,8 +62,8 @@ Deve retornar um array com 3 pokemóns aleatórios, contendo seus respectivos `n
 ```
 Use para instalar as dependências
 npm i
-Use para rodas todos os testes
+Use para rodar os testes
 npm t
-Use para testar todos os testes e gerar um reporte de cobertura de testes
+Use para testar e gerar um reporte de cobertura dos testes
 npm run test:cov
 ```
